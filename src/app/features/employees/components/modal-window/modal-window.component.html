@@ -1,0 +1,14 @@
+<div class="absolute top-0 right-0 left-0 bottom-0 m-[auto] w-[963px] min-h-[20%] max-h-[60%] bg-white rounded-[16px] p-[24px] z-[10]">
+
+    <div class="flex flex-row h-[42px] mb-[16px]">
+        <div class="text-[28px] font-[500] w-[100%]">{{title}}</div>
+        <img src="../../../../assets/x.svg" class="w-[29px] cursor-pointer" (click)="closeClick.emit()">
+    </div>
+
+    <ng-content></ng-content>
+
+    <div class="flex justify-end">
+        <app-core-button-light-gray class="mr-[16px]" text="Отмена"/>
+        <app-core-button-red text="Отмена"/>
+    </div>
+</div>
