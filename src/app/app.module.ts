@@ -11,17 +11,23 @@ import { fakeBackendProvider } from "./features/authorization/data/interceptors/
 import { appInitializer } from "./features/authorization/data/app-initializer";
 import { MainModule } from "./features/main/main.module";
 import { EmployeesModule } from './features/employees/employees.module';
+import { ErrorToastComponent } from './core/components/toast-alert/error-toast/error-toast.component';
+import { SuccessToastComponent } from './core/components/toast-alert/success-toast/success-toast.component';
+import { ToastComponent } from './core/components/toast-alert/toast-alert.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ToastComponent,
+    SuccessToastComponent,
+    ErrorToastComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AuthorizationModule,
     EmployeesModule,
-    MainModule
+    MainModule,
   ],
   providers: [
     {
