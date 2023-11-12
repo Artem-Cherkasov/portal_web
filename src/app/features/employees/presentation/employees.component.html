@@ -1,4 +1,9 @@
 <div class="flex ml-[17%] mt-10">
+    <app-core-page-shading [showDialog]="showDialog">
+        <employees-modal-window (closeClick)="onCrossClick()">
+            <app-core-search-field class="mb-[16px]"/>
+        </employees-modal-window>
+    </app-core-page-shading>
 
     <employees-menu/>
 
