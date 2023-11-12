@@ -1,0 +1,12 @@
+<div class="absolute right-[20px] top-[103px]">
+  <div class="flex flex-col mb-[20px]" *ngFor="let toast of toasts; let i = index">
+    <div *ngIf="isSuccess(toast.state) && i <= 4">
+      <success-toast title={{toast.title}} description={{toast.description}} (closeClick)="onCrossClick(toasts.indexOf(toast))"/>
+    </div>
+    
+    <div *ngIf="isError(toast.state) && i <= 4">
+      <error-toast title={{toast.title}} description={{toast.description}} (closeClick)="onCrossClick(toasts.indexOf(toast))"/>
+    </div>
+  </div>
+</div>
+
