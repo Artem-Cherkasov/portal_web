@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./employees.component.scss']
 })
 export class EmployeesComponent {
+  showDialog: boolean = false
+
+  onCrossClick() {
+    this.showDialog = !this.showDialog
+  }
 
 }
