@@ -13,6 +13,8 @@ import { RolesComponent } from './components/roles/roles.component';
 import { RoleItemComponent } from './components/roles/role-item/role-item.component';
 import { AddEmployeesComponent } from './components/add-employees/add-employees.component';
 import { EmployeeNewModule } from './components/employee-new/employee-new.module';
+import { ModalWindowComponent } from './components/modal-window/modal-window.component';
+import { PageShadingComponent } from 'src/app/core/components/page-shading/page-shading.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { EmployeeNewModule } from './components/employee-new/employee-new.module
     RolesComponent,
     RoleItemComponent,
     AddEmployeesComponent,
+    ModalWindowComponent,
+    PageShadingComponent
   ],
   exports: [EmployeesComponent, EmployeeNewModule],
   imports: [CommonModule, ComponentsModule, RouterOutlet],
